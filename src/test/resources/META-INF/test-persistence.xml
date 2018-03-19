@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="1.0">
+	<persistence-unit name="testPU" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<class>org.jboss.tools.example.springmvc.domain.Member</class>
+        <properties>
+	        <property name="hibernate.hbm2ddl.auto" value="create-drop" />
+        	<property name="hibernate.show_sql" value="true" />
+        			        
+<!-- 		 	<property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" /> -->
+<!--  		    <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/webdb" /> -->
+<!-- 		    <property name="hibernate.connection.username" value="root" /> -->
+<!-- 		    <property name="hibernate.connection.password" value="My6root." /> -->
+<!--   			<property name="hibernate.connection.pool_size" value="10" />       -->
+    	    
+<!--      	        	    <property name="hbm2ddl.dialect" value="org.hibernate.dialect.MySQLDialect"/> -->
+<!--      	        	    <property name="hbm2ddl.format_sql" value="true"/> -->
+<!--      	        	    <property name="hibernate.hbm2ddl.auto" value="create"/> -->
+        </properties>
+	</persistence-unit>
+</persistence>
